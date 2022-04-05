@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com links</title>
+    <title>Videos com HTML5</title>
 </head>
 <body>
-    <h1>Usando links externos</h1>
-    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
-    <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no Youtube</a></p>
-    <h1>Usando links internos</h1>
-    <p>Você também pode acessar a minha <a href="pag002.html" rel="next">segunda página</a></p>
-    <p>Você também pode acessar a <a href="noticias/pag003.html">página de notícias do meu site</a></p>
-    <h1>Links para Download</h1>
-    <ul>
-        <li><a href="livros/guia.pdf" type="application/pdf" target="_blank">Baixar livro em PDF</a></li>
-        <li><a href="livros/guia.rar" type="application/rar">Baixar livro compactado em RAR</a></li>
-    </ul>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video width="560" height="315" poster="imagens/barquinho.jpg" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem conpatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tjZQnk5j6Zo?start=28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/446416103?h=464d10ec9d&portrait=0" width="560" height="303" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>
